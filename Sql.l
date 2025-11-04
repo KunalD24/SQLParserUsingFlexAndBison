@@ -1,7 +1,6 @@
 %{
 #include "Sql.tab.h"
 #include <string.h>
-#include <ctype.h>
 %}
 
 %%
@@ -18,5 +17,6 @@
 .                           { return yytext[0]; }
 
 %%
+
 
 int yywrap(void) { return 1; }
